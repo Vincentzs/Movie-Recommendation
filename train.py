@@ -12,6 +12,8 @@ from recommender import DRRAgent
 import os
 ROOT_DIR = os.getcwd()
 DATA_DIR = os.path.join(ROOT_DIR, 'ml-1m/ml-1m')
+# DATA_DIR = os.path.join(ROOT_DIR, 'ml-25m/ml-25m')
+# DATA_DIR = os.path.join(ROOT_DIR, 'ml-latest-small/ml-latest-small')
 STATE_SIZE = 10
 MAX_EPISODE_NUM = 10
 
@@ -20,12 +22,17 @@ MAX_EPISODE_NUM = 10
 if __name__ == "__main__":
 
     print('Data loading...')
-
+    # TODO: Change to new data 100k & 25M
     #Loading datasets
     ratings_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'ratings.dat'), 'r').readlines()]
     users_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'users.dat'), 'r').readlines()]
     movies_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'movies.dat'),encoding='latin-1').readlines()]
-    ratings_df = pd.DataFrame(ratings_list, columns = ['UserID', 'MovieID', 'Rating', 'Timestamp'], dtype = np.uint32)
+    # ratings_df = pd.DataFrame(ratings_list, columns = ['UserID', 'MovieID', 'Rating', 'Timestamp'], dtype = np.uint32)
+    ratings_df = pd.DataFrame(ratings_list, columns=['UserID', 'MovieID', 'Rating', 'Timestamp'])
+    ratings_df['UserID'] = ratings_df['UserID'].astype(np.uint32)
+    ratings_df['MovieID'] = ratings_df['MovieID'].astype(np.uint32)
+    ratings_df['Rating'] = ratings_df['Rating'].astype(np.uint32)
+    ratings_df['Timestamp'] = ratings_df['Timestamp'].astype(np.uint32)
     movies_df = pd.DataFrame(movies_list, columns = ['MovieID', 'Title', 'Genres'])
     movies_df['MovieID'] = movies_df['MovieID'].apply(pd.to_numeric)
 
@@ -50,7 +57,7 @@ if __name__ == "__main__":
     train_items_num = items_num
     train_users_dict = {k:users_dict.item().get(k) for k in range(1, train_users_num+1)}
     train_users_history_lens = users_history_lens[:train_users_num]
-    
+
     print('DONE!')
     time.sleep(2)
 
