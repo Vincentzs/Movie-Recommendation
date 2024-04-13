@@ -14,8 +14,17 @@ class OfflineEnv(object):
         self.fix_user_id = fix_user_id
 
         self.user = fix_user_id if fix_user_id else np.random.choice(self.available_users)
+        print("\n self.users_dict[self.user]: ", self.users_dict[self.user])
+        print("\n self.user: ",self.user)
+        print("\n users_history_lens: ",users_history_lens)
+        print("\n users_history_lens length: ",len(users_history_lens))
+        print("\n users_history_lens for specific user: ",users_history_lens[self.user])
+        # print("\n movies_id_to_movies: ", movies_id_to_movies)
+        print("\n state_size: ", state_size)
+        # print("\n users_dict: ",users_dict)
         self.user_items = {data[0]:data[1] for data in self.users_dict[self.user]}
         self.items = [data[0] for data in self.users_dict[self.user][:self.state_size]]
+        print("\n self.items: ", self.items)
         self.done = False
         self.recommended_items = set(self.items)
         self.done_count = 3000
@@ -38,6 +47,7 @@ class OfflineEnv(object):
     def step(self, action, top_k=False):
 
         reward = -0.5
+        print("\naction: ", action)
         
         if top_k:
             correctly_recommended = []
