@@ -28,7 +28,12 @@ if __name__ == "__main__":
     ratings_list = [[int(x) if x.isdigit() else 0 for x in i.strip().split("::")] for i in open(os.path.join(DATA_DIR, 'ratings.dat'), 'r').readlines()]
     users_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'users.dat'), 'r').readlines()]
     movies_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'movies.dat'),encoding='latin-1').readlines()]
-    ratings_df = pd.DataFrame(ratings_list, columns = ['UserID', 'MovieID', 'Rating', 'Timestamp'], dtype = np.uint32)
+    # ratings_df = pd.DataFrame(ratings_list, columns = ['UserID', 'MovieID', 'Rating', 'Timestamp'], dtype = np.uint32)
+    ratings_df = pd.DataFrame(ratings_list, columns=['UserID', 'MovieID', 'Rating', 'Timestamp'])
+    ratings_df['UserID'] = ratings_df['UserID'].astype(np.uint32)
+    ratings_df['MovieID'] = ratings_df['MovieID'].astype(np.uint32)
+    ratings_df['Rating'] = ratings_df['Rating'].astype(np.uint32)
+    ratings_df['Timestamp'] = ratings_df['Timestamp'].astype(np.uint32)
     movies_df = pd.DataFrame(movies_list, columns = ['MovieID', 'Title', 'Genres'])
     movies_df['MovieID'] = movies_df['MovieID'].apply(pd.to_numeric)
 
