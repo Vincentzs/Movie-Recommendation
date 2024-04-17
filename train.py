@@ -5,19 +5,46 @@ import tensorflow as tf
 import itertools
 import matplotlib.pyplot as plt
 import time
+from sklearn.model_selection import ParameterGrid
 
 from envs import OfflineEnv
 from recommender import DRRAgent
 
 import os
 ROOT_DIR = os.getcwd()
-DATA_DIR = os.path.join(ROOT_DIR, 'ml-1m')
+DATA_DIR = os.path.join(ROOT_DIR, 'ml-1m/ml-1m')
 # DATA_DIR = os.path.join(ROOT_DIR, 'ml-25m/ml-25m')
 # DATA_DIR = os.path.join(ROOT_DIR, 'ml-latest-small/ml-latest-small')
 STATE_SIZE = 10
 MAX_EPISODE_NUM = 10
 
 # os.environ["CUDA_VISIBLE_DEVICES"]="1"
+
+def grid_search(env, users_num, items_num, param_grid):
+    best_precision = -np.inf
+    best_config = None
+    results = []
+
+    for params in ParameterGrid(param_grid):
+        print(f"Testing configuration: {params}")
+        agent = DRRAgent(env, users_num, items_num, STATE_SIZE, use_wandb=False, **params)
+        agent.actor.build_networks()
+        agent.critic.build_networks()
+        history = agent.train(MAX_EPISODE_NUM, load_model=False)
+        
+        # Safely calculate average precision
+        # Use 'if history else 0' to handle empty lists or None
+        avg_precision = np.mean(history) if history else 0 
+
+        results.append((params, avg_precision))
+        if avg_precision > best_precision:
+            best_precision = avg_precision
+            best_config = params
+
+        print(f"Configuration {params} achieved average precision: {avg_precision}")
+
+    print(f"Best configuration: {best_config} with precision: {best_precision}")
+    return best_config, results
 
 if __name__ == "__main__":
 
@@ -42,8 +69,10 @@ if __name__ == "__main__":
 
     # 영화 id를 영화 제목으로
     movies_id_to_movies = {movie[0]: movie[1:] for movie in movies_list}
-    ratings_df = ratings_df.applymap(int)
+    # ratings_df = ratings_df.applymap(int)
+    ratings_df = ratings_df.astype(int)
 
+    
     # 유저별로 본 영화들 순서대로 정리
     users_dict = np.load('./data/user_dict.npy', allow_pickle=True)
 
@@ -63,7 +92,22 @@ if __name__ == "__main__":
     time.sleep(2)
 
     env = OfflineEnv(train_users_dict, train_users_history_lens, movies_id_to_movies, STATE_SIZE)
-    recommender = DRRAgent(env, users_num, items_num, STATE_SIZE, use_wandb=False)
-    recommender.actor.build_networks()
-    recommender.critic.build_networks()
-    recommender.train(MAX_EPISODE_NUM, load_model=False)
+    # recommender = DRRAgent(env, users_num, items_num, STATE_SIZE, use_wandb=False)
+    # recommender.actor.build_networks()
+    # recommender.critic.build_networks()
+    # recommender.train(MAX_EPISODE_NUM, load_model=False)
+    
+    # Define hyperparam
+    param_grid = {
+        # Keep the embedding dim as 100 for now
+        'embedding_dim': [100],
+        'actor_hidden_dim': [128, 256],
+        'actor_learning_rate': [0.1, 0.01, 0.001, 0.0001],
+        'critic_hidden_dim': [128, 256],
+        'critic_learning_rate': [0.1, 0.01, 0.001, 0.0001],
+        'batch_size': [16, 32, 64, 128],
+        'load_weights': [True],
+        'weights_path': ['./save_weights/user_movie_embedding_case4.h5', './save_weights/user_movie_embedding_case3.h5', './save_weights/user_movie_embedding_98accu.h5']
+    }
+
+    best_config, results = grid_search(env, users_num, items_num, param_grid)

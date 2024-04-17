@@ -16,23 +16,40 @@ import wandb
 
 class DRRAgent:
     
-    def __init__(self, env, users_num, items_num, state_size, is_test=False, use_wandb=False):
+    def __init__(self, env, users_num, items_num, state_size, is_test=False, use_wandb=False, 
+                 embedding_dim=100, actor_hidden_dim=128, actor_learning_rate=0.001, 
+                 critic_hidden_dim=128, critic_learning_rate=0.001, discount_factor=0.9, tau=0.001,
+                 replay_memory_size=1000000, batch_size=32, load_weights=True, 
+                 weights_path='./save_weights/user_movie_embedding_case4.h5'):
+        
+        # self.env = env
+
+        # self.users_num = users_num
+        # self.items_num = items_num
+        
+        # self.embedding_dim = 100
+        # self.actor_hidden_dim = 128
+        # self.actor_learning_rate = 0.001
+        # self.critic_hidden_dim = 128
+        # self.critic_learning_rate = 0.001
+        # self.discount_factor = 0.9
+        # self.tau = 0.001
+
+        # self.replay_memory_size = 1000000
+        # self.batch_size = 32
         
         self.env = env
-
         self.users_num = users_num
         self.items_num = items_num
-        
-        self.embedding_dim = 100
-        self.actor_hidden_dim = 128
-        self.actor_learning_rate = 0.001
-        self.critic_hidden_dim = 128
-        self.critic_learning_rate = 0.001
-        self.discount_factor = 0.9
-        self.tau = 0.001
-
-        self.replay_memory_size = 1000000
-        self.batch_size = 32
+        self.embedding_dim = embedding_dim
+        self.actor_hidden_dim = actor_hidden_dim
+        self.actor_learning_rate = actor_learning_rate
+        self.critic_hidden_dim = critic_hidden_dim
+        self.critic_learning_rate = critic_learning_rate
+        self.discount_factor = discount_factor
+        self.tau = tau
+        self.replay_memory_size = replay_memory_size
+        self.batch_size = batch_size
         
         self.actor = Actor(self.embedding_dim, self.actor_hidden_dim, self.actor_learning_rate, state_size, self.tau)
         self.critic = Critic(self.critic_hidden_dim, self.critic_learning_rate, self.embedding_dim, self.tau)
@@ -46,9 +63,9 @@ class DRRAgent:
         # self.embedding_network = UserMovieEmbedding(users_num, self.embedding_dim)
         # self.embedding_network([np.zeros((1)),np.zeros((1,100))])
         self.save_model_weight_dir = f"./save_model/trail-{datetime.now().strftime('%Y-%m-%d-%H')}"
-        if not os.path.exists(self.save_model_weight_dir):
-            os.makedirs(os.path.join(self.save_model_weight_dir, 'imagess'))
-        embedding_save_file_dir = './save_weights/user_movie_embedding_case4.h5'
+        if not os.path.exists(self.save_model_weight_dir) or not load_weights:
+            os.makedirs(os.path.join(self.save_model_weight_dir, 'images'))
+        embedding_save_file_dir = weights_path
         assert os.path.exists(embedding_save_file_dir), f"embedding save file directory: '{embedding_save_file_dir}' is wrong."
         self.embedding_network.load_weights(embedding_save_file_dir)
 
