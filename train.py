@@ -49,7 +49,6 @@ def grid_search(env, users_num, items_num, param_grid):
 if __name__ == "__main__":
 
     print('Data loading...')
-    # TODO: Change to new data 100k & 25M
     #Loading datasets
     # Ensure all elements can be converted to integers
     ratings_list = [[int(x) if x.isdigit() else 0 for x in i.strip().split("::")] for i in open(os.path.join(DATA_DIR, 'ratings.dat'), 'r').readlines()]
@@ -107,7 +106,6 @@ if __name__ == "__main__":
         'critic_learning_rate': [0.1, 0.01, 0.001, 0.0001],
         'batch_size': [16, 32, 64, 128],
         'load_weights': [True],
-        'weights_path': ['./save_weights/user_movie_embedding_case4.h5', './save_weights/user_movie_embedding_case3.h5', './save_weights/user_movie_embedding_98accu.h5']
     }
 
     best_config, results = grid_search(env, users_num, items_num, param_grid)

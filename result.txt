@@ -1,0 +1,998 @@
+1/10, precision :  6%, total_reward:-10.5, q_loss : 43.042388916015625, mean_action : 0.04807460719141467
+
+2/10, precision :  0%, total_reward:-3.5, q_loss : 23.1398983001709, mean_action : -0.002836052009037564
+
+3/10, precision :  1%, total_reward:-34.5, q_loss : 3.2914321422576904, mean_action : -0.00609324460228285
+
+4/10, precision :  8%, total_reward:-55.5, q_loss : 0.2054348587989807, mean_action : 0.03238146501892019
+
+5/10, precision :  0%, total_reward:-5.0, q_loss : 0.3895581066608429, mean_action : -0.010132318377494811
+
+6/10, precision : 11%, total_reward:-18.5, q_loss : 0.29445043206214905, mean_action : 0.07146161647810452
+
+7/10, precision :  2%, total_reward:-16.5, q_loss : 0.14969006180763245, mean_action : 0.038187634173561545
+
+8/10, precision :  6%, total_reward:-36.5, q_loss : 0.20873376727104187, mean_action : 0.020452247199259303
+
+9/10, precision :  5%, total_reward:-43.5, q_loss : 0.17086336016654968, mean_action : 0.06587192245324455
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  2%, total_reward:-19.0, q_loss : 2.016174793243408, mean_action : 0.07014057892124827
+
+1/10, precision :  0%, total_reward:-6.5, q_loss : 0.058462753891944885, mean_action : 0.0212415853371987
+
+2/10, precision :  0%, total_reward:-2.5, q_loss : 0.38044947385787964, mean_action : 0.05516719436645508
+
+3/10, precision :  0%, total_reward:-14.5, q_loss : 0.08339527249336243, mean_action : 0.041652108965248895
+
+4/10, precision :  0%, total_reward:-5.0, q_loss : 0.13796260952949524, mean_action : 0.06663449430465698
+
+5/10, precision : 22%, total_reward:-13.5, q_loss : 0.04164332523941994, mean_action : -0.005203741290581915
+
+6/10, precision : 25%, total_reward:0.5, q_loss : 0.05389026552438736, mean_action : -0.07232638880610466
+
+7/10, precision : 37%, total_reward:85.0, q_loss : 0.06849054247140884, mean_action : -0.017994841373172303
+
+8/10, precision :  0%, total_reward:-5.0, q_loss : 0.039457254111766815, mean_action : -0.07413647890090944
+
+9/10, precision : 13%, total_reward:-10.0, q_loss : 0.014476068317890167, mean_action : 0.0024010607600212044
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 25%, total_reward:-5.0, q_loss : 0.07006654888391495, mean_action : 0.0472508158534765
+
+1/10, precision : 13%, total_reward:-8.5, q_loss : 0.0242175105959177, mean_action : 0.01611862897872925
+
+2/10, precision : 17%, total_reward:-16.0, q_loss : 0.02199048362672329, mean_action : 0.01608136531950413
+
+3/10, precision :  0%, total_reward:-13.5, q_loss : 0.044490475207567215, mean_action : 0.015831041711348075
+
+4/10, precision :  8%, total_reward:-15.5, q_loss : 0.014161236584186554, mean_action : 0.11260585394311456
+
+5/10, precision :  3%, total_reward:-21.0, q_loss : 0.0037846018094569445, mean_action : 0.08205874279433603
+
+6/10, precision : 18%, total_reward:-22.5, q_loss : 0.005235223099589348, mean_action : 0.07038865326520273
+
+7/10, precision : 20%, total_reward:-10.0, q_loss : 0.005816197022795677, mean_action : -0.00097056288084539
+
+8/10, precision : 10%, total_reward:-12.5, q_loss : 0.0050378660671412945, mean_action : 0.06974879119707192
+
+9/10, precision :  0%, total_reward:-2.0, q_loss : 0.003933965228497982, mean_action : -0.018884267807006836
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-5.0, q_loss : 0.7330213785171509, mean_action : -0.013060891300439834
+
+1/10, precision :  0%, total_reward:-3.5, q_loss : 0.412026584148407, mean_action : 0.02513072184153966
+
+2/10, precision :  2%, total_reward:-17.5, q_loss : 0.3117314279079437, mean_action : -0.04786278444367486
+
+3/10, precision : 22%, total_reward:-3.5, q_loss : 0.16665655374526978, mean_action : -0.0016607291011487037
+
+4/10, precision :  2%, total_reward:-17.5, q_loss : 0.11110909283161163, mean_action : -0.021245617835145253
+
+5/10, precision :  6%, total_reward:-17.5, q_loss : 0.07870078831911087, mean_action : 0.012821996884143096
+
+6/10, precision :  0%, total_reward:-1.0, q_loss : 0.07142681628465652, mean_action : -0.11720282554626466
+
+7/10, precision :  0%, total_reward:-2.0, q_loss : 0.07028251886367798, mean_action : 0.06812623143196106
+
+8/10, precision :  3%, total_reward:-12.5, q_loss : 0.07270895689725876, mean_action : -0.05395084810256959
+
+9/10, precision : 12%, total_reward:-20.0, q_loss : 0.06329289823770523, mean_action : -0.06723125610086654
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-3.5, q_loss : 8136.3056640625, mean_action : 0.06396877493177142
+
+1/10, precision :  3%, total_reward:-38.0, q_loss : 293.9564208984375, mean_action : 0.0411868445277214
+
+2/10, precision :  7%, total_reward:-22.5, q_loss : 40.4130859375, mean_action : 0.07247286301392776
+
+3/10, precision :  5%, total_reward:-15.0, q_loss : 64.4195556640625, mean_action : 0.06634861811613424
+
+4/10, precision :  6%, total_reward:-22.5, q_loss : 22.35610008239746, mean_action : -0.016383093595504748
+
+5/10, precision :  0%, total_reward:-6.5, q_loss : 1.961584448814392, mean_action : 0.027203962973185947
+
+6/10, precision :  0%, total_reward:-19.0, q_loss : 0.5410378575325012, mean_action : 0.06503229249168087
+
+7/10, precision : 12%, total_reward:-1.5, q_loss : 0.18462054431438446, mean_action : 0.05451100125908852
+
+8/10, precision :  9%, total_reward:-69.0, q_loss : 0.35933852195739746, mean_action : 0.06844876093407198
+
+9/10, precision :  0%, total_reward:-1.5, q_loss : 0.17781762778759003, mean_action : 0.032495755751927695
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  9%, total_reward:-33.5, q_loss : 0.2739733159542084, mean_action : -0.04131728956332574
+
+1/10, precision :  7%, total_reward:-37.5, q_loss : 0.02010723575949669, mean_action : 0.07995285587890125
+
+2/10, precision : 25%, total_reward:0.5, q_loss : 0.020390281453728676, mean_action : 0.010591627025022745
+
+3/10, precision : 20%, total_reward:-9.5, q_loss : 0.016855262219905853, mean_action : 0.008025535755260021
+
+4/10, precision :  4%, total_reward:-9.0, q_loss : 0.022135529667139053, mean_action : 0.01027369330758634
+
+5/10, precision : 12%, total_reward:-20.5, q_loss : 0.01104535348713398, mean_action : 0.21533129251003266
+
+6/10, precision : 13%, total_reward:-27.5, q_loss : 0.015236173756420612, mean_action : 0.06875444844365121
+
+7/10, precision :  4%, total_reward:-19.0, q_loss : 0.023193320259451866, mean_action : 0.09830491712559825
+
+8/10, precision :  0%, total_reward:-4.5, q_loss : 0.016292937099933624, mean_action : 0.10282616224553849
+
+9/10, precision :  6%, total_reward:-33.5, q_loss : 0.029661379754543304, mean_action : 0.12893646031913192
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-11.5, q_loss : 0.40600934624671936, mean_action : -0.006813351958990098
+
+1/10, precision : 24%, total_reward:-3.0, q_loss : 0.06426965445280075, mean_action : 0.03953456797855811
+
+2/10, precision :  9%, total_reward:-20.5, q_loss : 0.043873079121112823, mean_action : 0.024429559477170303
+
+3/10, precision : 22%, total_reward:-17.5, q_loss : 0.024712583050131798, mean_action : 0.10267699415192884
+
+4/10, precision :  0%, total_reward:-13.5, q_loss : 0.01672038622200489, mean_action : 0.17418820019279205
+
+5/10, precision : 23%, total_reward:-3.0, q_loss : 0.02263004146516323, mean_action : 0.04630199824367557
+
+6/10, precision :  8%, total_reward:-52.0, q_loss : 0.007886306382715702, mean_action : -0.006823013049441485
+
+7/10, precision : 13%, total_reward:-13.0, q_loss : 0.010003311559557915, mean_action : -0.09442544159522423
+
+8/10, precision : 26%, total_reward:3.5, q_loss : 0.017236921936273575, mean_action : -0.08127663566470147
+
+9/10, precision :  4%, total_reward:-10.0, q_loss : 0.008039798587560654, mean_action : -0.11243232841077058
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-7.0, q_loss : 0.6195052862167358, mean_action : 0.01074451174054827
+
+1/10, precision :  0%, total_reward:-23.5, q_loss : 0.5909112095832825, mean_action : -0.054243449135260136
+
+2/10, precision :  5%, total_reward:-96.0, q_loss : 0.1618318408727646, mean_action : -0.2509505280617917
+
+3/10, precision :  0%, total_reward:-6.0, q_loss : 0.11437160521745682, mean_action : -0.17729794581731162
+
+4/10, precision : 17%, total_reward:-78.0, q_loss : 0.19435346126556396, mean_action : -0.12428024348380064
+
+5/10, precision :  2%, total_reward:-31.5, q_loss : 0.11859672516584396, mean_action : -0.14806557854016622
+
+6/10, precision :  0%, total_reward:-2.0, q_loss : 0.09565640240907669, mean_action : -0.047079313993453976
+
+7/10, precision :  5%, total_reward:-15.5, q_loss : 0.09183275699615479, mean_action : -0.18812197195517058
+
+8/10, precision :  4%, total_reward:-9.5, q_loss : 0.045905157923698425, mean_action : -0.1726539704474536
+
+9/10, precision :  0%, total_reward:-4.5, q_loss : 0.035040006041526794, mean_action : -0.11668309847513836
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  5%, total_reward:-15.5, q_loss : 11629.7998046875, mean_action : -0.007704721324973639
+
+1/10, precision :  3%, total_reward:-36.5, q_loss : 57.20449447631836, mean_action : 0.07651612121381877
+
+2/10, precision :  4%, total_reward:-16.5, q_loss : 2.045865774154663, mean_action : 0.0671574499579363
+
+3/10, precision : 41%, total_reward:302.0, q_loss : 0.727024495601654, mean_action : -0.007198622165373325
+
+4/10, precision : 12%, total_reward:-63.0, q_loss : 0.15601205825805664, mean_action : 0.050588263757696976
+
+5/10, precision :  3%, total_reward:-23.5, q_loss : 0.1462809294462204, mean_action : -0.06376696199178696
+
+6/10, precision :  0%, total_reward:-3.5, q_loss : 0.1442127525806427, mean_action : -0.2116837624141148
+
+7/10, precision :  0%, total_reward:-13.5, q_loss : 0.13767962157726288, mean_action : -0.16844314160170376
+
+8/10, precision :  4%, total_reward:-17.5, q_loss : 0.1301649510860443, mean_action : -0.05027325394418505
+
+9/10, precision :  4%, total_reward:-52.0, q_loss : 0.13960514962673187, mean_action : 0.0711723082447052
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  6%, total_reward:-53.0, q_loss : 0.49418944120407104, mean_action : -0.0808518935792096
+
+1/10, precision : 17%, total_reward:-10.0, q_loss : 0.058929238468408585, mean_action : -0.15246917818431505
+
+2/10, precision : 26%, total_reward:3.0, q_loss : 0.02746284380555153, mean_action : -0.05389718186855318
+
+3/10, precision :  3%, total_reward:-14.5, q_loss : 0.009374833665788174, mean_action : -0.029456006754189735
+
+4/10, precision :  2%, total_reward:-18.0, q_loss : 0.004540491849184036, mean_action : -0.03564980687239231
+
+5/10, precision :  5%, total_reward:-20.5, q_loss : 0.0021752978209406137, mean_action : 0.001169819258726561
+
+6/10, precision : 10%, total_reward:-13.5, q_loss : 0.002504154806956649, mean_action : -0.06487118938512969
+
+7/10, precision : 19%, total_reward:-12.5, q_loss : 0.00476951664313674, mean_action : -0.13165968922468332
+
+8/10, precision :  0%, total_reward:-1.0, q_loss : 0.004659008234739304, mean_action : -0.10412088394165038
+
+9/10, precision :  0%, total_reward:-4.0, q_loss : 0.004772796295583248, mean_action : -0.12000320672988891
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 29%, total_reward:29.0, q_loss : 0.06314586848020554, mean_action : -0.15628811674140325
+
+1/10, precision : 14%, total_reward:-18.5, q_loss : 0.006684357766062021, mean_action : -0.08356054036887649
+
+2/10, precision : 15%, total_reward:-28.5, q_loss : 0.005301173310726881, mean_action : -0.11073304693345669
+
+3/10, precision :  9%, total_reward:-10.0, q_loss : 0.006797466892749071, mean_action : -0.12405514680978026
+
+4/10, precision : 17%, total_reward:-5.0, q_loss : 0.011149915866553783, mean_action : -0.11504060537918755
+
+5/10, precision :  3%, total_reward:-23.0, q_loss : 0.005721478722989559, mean_action : -0.02962413407034345
+
+6/10, precision :  0%, total_reward:-4.0, q_loss : 0.0067605385556817055, mean_action : -0.069827179312706
+
+7/10, precision :  0%, total_reward:-1.0, q_loss : 0.009155739098787308, mean_action : -0.06885133683681488
+
+8/10, precision :  5%, total_reward:-8.5, q_loss : 0.004149396903812885, mean_action : 0.052076395332813254
+
+9/10, precision :  2%, total_reward:-19.5, q_loss : 0.0019748955965042114, mean_action : 0.011210183387710944
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  9%, total_reward:-44.5, q_loss : 0.37942472100257874, mean_action : -0.023114011696168592
+
+1/10, precision :  1%, total_reward:-33.0, q_loss : 0.10531807690858841, mean_action : -0.12622151212415833
+
+2/10, precision :  4%, total_reward:-32.5, q_loss : 0.052903227508068085, mean_action : -0.09160791478157043
+
+3/10, precision :  0%, total_reward:-18.0, q_loss : 0.04085974395275116, mean_action : -0.0784090806874964
+
+4/10, precision :  5%, total_reward:-7.0, q_loss : 0.03721524775028229, mean_action : -0.10002480573513928
+
+5/10, precision :  6%, total_reward:-62.5, q_loss : 0.026530183851718903, mean_action : -0.132198189003968
+
+6/10, precision :  0%, total_reward:-16.0, q_loss : 0.022505061700940132, mean_action : -0.07908217919990418
+
+7/10, precision :  0%, total_reward:-6.5, q_loss : 0.01789025589823723, mean_action : -0.1744943926884578
+
+8/10, precision : 17%, total_reward:-56.0, q_loss : 0.02735065668821335, mean_action : -0.10432365041078054
+
+9/10, precision :  0%, total_reward:-6.5, q_loss : 0.05314159393310547, mean_action : -0.11430268507737379
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  9%, total_reward:-28.5, q_loss : 119.89818572998047, mean_action : -0.027486029293226164
+
+1/10, precision :  0%, total_reward:-8.5, q_loss : 2.047992706298828, mean_action : -0.022987221970277673
+
+2/10, precision :  5%, total_reward:-7.0, q_loss : 0.45525068044662476, mean_action : -0.030065111973706406
+
+3/10, precision :  5%, total_reward:-28.0, q_loss : 1.1647416353225708, mean_action : 0.02542619779490042
+
+4/10, precision :  0%, total_reward:-5.5, q_loss : 0.2019864171743393, mean_action : -0.03339221033183011
+
+5/10, precision :  9%, total_reward:-40.0, q_loss : 0.2143433392047882, mean_action : 0.009944865493611866
+
+6/10, precision : 46%, total_reward:318.0, q_loss : 0.18476513028144836, mean_action : 0.009863534668570621
+
+7/10, precision : 12%, total_reward:-61.5, q_loss : 0.17317883670330048, mean_action : 0.021705069919979118
+
+8/10, precision :  8%, total_reward:-30.0, q_loss : 0.17807015776634216, mean_action : -0.023402754724780227
+
+9/10, precision : 13%, total_reward:-51.5, q_loss : 0.15300442278385162, mean_action : 0.028896882044125886
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  2%, total_reward:-41.5, q_loss : 0.3489367961883545, mean_action : 0.016052948290942816
+
+1/10, precision :  5%, total_reward:-6.5, q_loss : 0.023440232500433922, mean_action : -0.005961772483937886
+
+2/10, precision : 11%, total_reward:-36.0, q_loss : 0.03319273144006729, mean_action : -0.02963296698606931
+
+3/10, precision : 11%, total_reward:-3.0, q_loss : 0.021679194644093513, mean_action : -0.026737976604037806
+
+4/10, precision :  2%, total_reward:-18.0, q_loss : 0.09152300655841827, mean_action : -0.029909842595075953
+
+5/10, precision : 17%, total_reward:-9.0, q_loss : 0.053553786128759384, mean_action : -0.017906269846291387
+
+6/10, precision :  8%, total_reward:-24.0, q_loss : 0.03839563950896263, mean_action : 0.02542011540901812
+
+7/10, precision : 12%, total_reward:-30.0, q_loss : 0.054572802037000656, mean_action : -0.011310622545389021
+
+8/10, precision : 18%, total_reward:-26.5, q_loss : 0.048230718821287155, mean_action : -0.0817520378408192
+
+9/10, precision : 12%, total_reward:-23.5, q_loss : 0.07831908017396927, mean_action : -0.057324102936166035
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 10%, total_reward:-32.5, q_loss : 0.12265811115503311, mean_action : -0.021230450857465517
+
+1/10, precision :  2%, total_reward:-19.0, q_loss : 0.044239386916160583, mean_action : 0.028082272735508996
+
+2/10, precision :  8%, total_reward:-30.0, q_loss : 0.03615432232618332, mean_action : 0.07952768180959968
+
+3/10, precision :  7%, total_reward:-23.0, q_loss : 0.031232915818691254, mean_action : 0.021094893417076054
+
+4/10, precision : 13%, total_reward:-22.5, q_loss : 0.03780980780720711, mean_action : 0.0186683650083012
+
+5/10, precision : 30%, total_reward:24.5, q_loss : 0.04984479025006294, mean_action : 0.035561793153285975
+
+6/10, precision :  2%, total_reward:-21.0, q_loss : 0.05195468291640282, mean_action : -0.027838617355927176
+
+7/10, precision :  4%, total_reward:-8.5, q_loss : 0.04020246863365173, mean_action : 0.0294343428178267
+
+8/10, precision : 13%, total_reward:-5.5, q_loss : 0.03962137922644615, mean_action : -0.02306591201958984
+
+9/10, precision :  6%, total_reward:-18.5, q_loss : 0.03272246941924095, mean_action : -0.044789419348041225
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 31%, total_reward:13.5, q_loss : 0.3315037488937378, mean_action : -0.10964189665334517
+
+1/10, precision :  5%, total_reward:-21.5, q_loss : 0.1987318992614746, mean_action : -0.034805096174989426
+
+2/10, precision : 13%, total_reward:-3.5, q_loss : 0.23796479403972626, mean_action : -0.02430539099375407
+
+3/10, precision : 26%, total_reward:12.0, q_loss : 0.21245965361595154, mean_action : 0.01729608651026186
+
+4/10, precision :  6%, total_reward:-5.5, q_loss : 0.17052695155143738, mean_action : 0.026006308719515786
+
+5/10, precision :  0%, total_reward:-6.0, q_loss : 0.13740770518779755, mean_action : 0.001923878689606982
+
+6/10, precision : 18%, total_reward:-8.0, q_loss : 0.07300106436014175, mean_action : 0.01607795337113467
+
+7/10, precision :  0%, total_reward:-5.0, q_loss : 0.07082019746303558, mean_action : 0.12942955946922302
+
+8/10, precision : 11%, total_reward:-2.0, q_loss : 0.07373889535665512, mean_action : 0.12937172518836126
+
+9/10, precision : 16%, total_reward:-9.5, q_loss : 0.07805123180150986, mean_action : 0.05135775793343781
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-9.5, q_loss : 26372.505859375, mean_action : 0.04881780531845594
+
+1/10, precision :  0%, total_reward:-8.5, q_loss : 1321.163330078125, mean_action : 0.01991050018983729
+
+2/10, precision :  0%, total_reward:-12.0, q_loss : 204.71629333496094, mean_action : -0.0008410790314276953
+
+3/10, precision : 18%, total_reward:-50.0, q_loss : 0.4362276792526245, mean_action : 0.003479520117027172
+
+4/10, precision :  0%, total_reward:-1.5, q_loss : 0.40009430050849915, mean_action : 0.02695615450541179
+
+5/10, precision :  6%, total_reward:-34.0, q_loss : 0.49623751640319824, mean_action : -0.0034259156386057536
+
+6/10, precision :  0%, total_reward:-14.0, q_loss : 0.33795166015625, mean_action : -0.03095041871070862
+
+7/10, precision :  2%, total_reward:-16.0, q_loss : 0.3260016143321991, mean_action : -0.0171867527832856
+
+8/10, precision :  3%, total_reward:-13.0, q_loss : 0.31151580810546875, mean_action : 0.034074850734323266
+
+9/10, precision :  0%, total_reward:-1.5, q_loss : 0.30119988322257996, mean_action : -0.04452563802401225
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 14%, total_reward:-45.0, q_loss : 0.862463653087616, mean_action : 0.011574703826094577
+
+1/10, precision : 13%, total_reward:-27.5, q_loss : 0.06198429688811302, mean_action : 9.631300172885947e-05
+
+2/10, precision : 28%, total_reward:13.0, q_loss : 0.04150140658020973, mean_action : -0.006637992624080526
+
+3/10, precision :  0%, total_reward:-10.0, q_loss : 0.02766553685069084, mean_action : -0.05003957718610763
+
+4/10, precision :  7%, total_reward:-19.5, q_loss : 0.018584193661808968, mean_action : -0.02388430044054985
+
+5/10, precision : 24%, total_reward:-2.0, q_loss : 0.04914011433720589, mean_action : -0.04816684692886706
+
+6/10, precision : 23%, total_reward:-12.0, q_loss : 0.04536711052060127, mean_action : -0.07773295808495494
+
+7/10, precision : 12%, total_reward:-21.0, q_loss : 0.03955034539103508, mean_action : -0.05222529987494149
+
+8/10, precision :  0%, total_reward:-9.0, q_loss : 0.03586969152092934, mean_action : -0.0977251993285285
+
+9/10, precision :  0%, total_reward:-6.0, q_loss : 0.03340085968375206, mean_action : -0.07067562773823739
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  2%, total_reward:-46.0, q_loss : 0.08247428387403488, mean_action : -0.02181212783138328
+
+1/10, precision : 21%, total_reward:-21.0, q_loss : 0.06622038036584854, mean_action : -0.0014001818105517207
+
+2/10, precision : 18%, total_reward:-15.0, q_loss : 0.03732166439294815, mean_action : -0.06356155675980779
+
+3/10, precision :  0%, total_reward:-1.0, q_loss : 0.03446447104215622, mean_action : 0.020185112357139587
+
+4/10, precision :  0%, total_reward:-9.0, q_loss : 0.02791082113981247, mean_action : -0.07351450178358292
+
+5/10, precision : 13%, total_reward:-50.0, q_loss : 0.03087572380900383, mean_action : -0.014164974984158288
+
+6/10, precision :  0%, total_reward:-1.5, q_loss : 0.01874658279120922, mean_action : 0.053189083735148114
+
+7/10, precision :  5%, total_reward:-27.0, q_loss : 0.03268347308039665, mean_action : -0.0076490153937504276
+
+8/10, precision : 11%, total_reward:-19.0, q_loss : 0.02530037611722946, mean_action : 0.018536938798259683
+
+9/10, precision :  5%, total_reward:-7.0, q_loss : 0.02028057351708412, mean_action : -0.02391985893249512
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  7%, total_reward:-9.0, q_loss : 0.4083687961101532, mean_action : -0.025315413784097754
+
+1/10, precision :  2%, total_reward:-19.0, q_loss : 0.09199220687150955, mean_action : 0.016797025203704845
+
+2/10, precision :  4%, total_reward:-8.5, q_loss : 0.06141082942485809, mean_action : -0.03666938736325219
+
+3/10, precision :  0%, total_reward:-1.0, q_loss : 0.052823860198259354, mean_action : 0.054339141845703126
+
+4/10, precision :  1%, total_reward:-25.5, q_loss : 0.05362619832158089, mean_action : -0.0265447457759611
+
+5/10, precision :  5%, total_reward:-47.5, q_loss : 0.04620734229683876, mean_action : -0.06855623612196557
+
+6/10, precision :  0%, total_reward:-3.0, q_loss : 0.03870459645986557, mean_action : -0.030614025195439657
+
+7/10, precision : 40%, total_reward:230.5, q_loss : 0.08929282426834106, mean_action : -0.19972025974323634
+
+8/10, precision : 13%, total_reward:-12.0, q_loss : 0.08215415477752686, mean_action : -0.20457983915011088
+
+9/10, precision :  7%, total_reward:-11.0, q_loss : 0.0739714503288269, mean_action : -0.16849411027772085
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 16, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-16.5, q_loss : 3064.275146484375, mean_action : 0.004242293939870944
+
+1/10, precision :  0%, total_reward:-10.0, q_loss : 31.66068458557129, mean_action : 0.042596276260557626
+
+2/10, precision :  7%, total_reward:-16.0, q_loss : 5.252708435058594, mean_action : -0.004722457929299424
+
+3/10, precision :  0%, total_reward:-9.5, q_loss : 1.5496560335159302, mean_action : -0.07872620027316245
+
+4/10, precision :  6%, total_reward:-29.5, q_loss : 0.3759252727031708, mean_action : 0.03948975281715393
+
+5/10, precision : 11%, total_reward:-44.5, q_loss : 0.26040831208229065, mean_action : 0.046471387573055446
+
+6/10, precision :  9%, total_reward:-3.0, q_loss : 0.1426319032907486, mean_action : -0.004558842832391915
+
+7/10, precision :  3%, total_reward:-35.0, q_loss : 0.15681132674217224, mean_action : 0.014966990089998012
+
+8/10, precision :  2%, total_reward:-18.0, q_loss : 0.24715052545070648, mean_action : -0.002172993513254019
+
+9/10, precision :  3%, total_reward:-25.0, q_loss : 0.18345355987548828, mean_action : -0.01116870697528597
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  5%, total_reward:-21.0, q_loss : 0.5719170570373535, mean_action : 0.004722641282356704
+
+1/10, precision :  0%, total_reward:-10.5, q_loss : 0.0024049405474215746, mean_action : 0.05297481308380763
+
+2/10, precision :  5%, total_reward:-7.0, q_loss : 0.001915146131068468, mean_action : 0.04326446694486281
+
+3/10, precision :  0%, total_reward:-13.5, q_loss : 0.004714447073638439, mean_action : 0.11746618425404583
+
+4/10, precision :  6%, total_reward:-18.5, q_loss : 0.009148668497800827, mean_action : 0.10132143751780189
+
+5/10, precision :  0%, total_reward:-7.0, q_loss : 0.010227805003523827, mean_action : -0.07649619332381659
+
+6/10, precision :  4%, total_reward:-44.5, q_loss : 0.003922407981008291, mean_action : -0.0279295592561916
+
+7/10, precision :  3%, total_reward:-26.5, q_loss : 0.00458519347012043, mean_action : 0.006217269917003442
+
+8/10, precision :  0%, total_reward:-15.0, q_loss : 0.004504550714045763, mean_action : -0.05060718870162965
+
+9/10, precision :  8%, total_reward:-29.5, q_loss : 0.006931961979717016, mean_action : 0.0216326481103897
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  4%, total_reward:-9.5, q_loss : 0.35082027316093445, mean_action : 0.013480589281428939
+
+1/10, precision :  3%, total_reward:-11.0, q_loss : 0.03428691625595093, mean_action : -0.009673983363004835
+
+2/10, precision :  7%, total_reward:-16.5, q_loss : 0.04338587448000908, mean_action : 0.03102863083470543
+
+3/10, precision :  0%, total_reward:-19.0, q_loss : 0.016300519928336143, mean_action : 0.041070803152887456
+
+4/10, precision :  0%, total_reward:-27.5, q_loss : 0.018872428685426712, mean_action : 0.0256122331486808
+
+5/10, precision :  0%, total_reward:-1.0, q_loss : 0.021369988098740578, mean_action : 0.08086910605430603
+
+6/10, precision :  0%, total_reward:-3.5, q_loss : 0.01715908758342266, mean_action : 0.07669224636895315
+
+7/10, precision :  2%, total_reward:-34.5, q_loss : 0.023190759122371674, mean_action : -3.2840093857124123e-05
+
+8/10, precision :  8%, total_reward:-27.0, q_loss : 0.023144397884607315, mean_action : 0.002559462733566764
+
+9/10, precision :  0%, total_reward:-8.5, q_loss : 0.018591418862342834, mean_action : 0.03118269338327296
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 13%, total_reward:-46.5, q_loss : 0.26723751425743103, mean_action : -0.032234769451374906
+
+1/10, precision : 12%, total_reward:-26.0, q_loss : 0.15141820907592773, mean_action : -0.007990636746088658
+
+2/10, precision :  4%, total_reward:-20.0, q_loss : 0.10631969571113586, mean_action : -0.031313843280076976
+
+3/10, precision :  3%, total_reward:-26.0, q_loss : 0.10182309150695801, mean_action : 0.001829216499482432
+
+4/10, precision :  3%, total_reward:-10.0, q_loss : 0.0995197668671608, mean_action : 0.038372449966577384
+
+5/10, precision :  7%, total_reward:-9.5, q_loss : 0.10282233357429504, mean_action : 0.002101005911827085
+
+6/10, precision :  5%, total_reward:-29.5, q_loss : 0.06121553108096123, mean_action : 0.03917093021529062
+
+7/10, precision :  0%, total_reward:-0.5, q_loss : 0.07897139340639114, mean_action : 0.10324118614196777
+
+8/10, precision :  7%, total_reward:-18.0, q_loss : 0.060808997601270676, mean_action : 0.04927659897892563
+
+9/10, precision :  6%, total_reward:-24.0, q_loss : 0.0610390305519104, mean_action : -0.03376859299161217
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 10%, total_reward:-39.0, q_loss : 5221.30322265625, mean_action : 0.021145760907280833
+
+1/10, precision :  2%, total_reward:-31.5, q_loss : 30.32423210144043, mean_action : 0.010005873047130206
+
+2/10, precision :  3%, total_reward:-21.5, q_loss : 4.964684963226318, mean_action : 0.016803112310521742
+
+3/10, precision :  0%, total_reward:-15.0, q_loss : 1.1632661819458008, mean_action : 0.022716655772307824
+
+4/10, precision : 12%, total_reward:-60.5, q_loss : 21.57765007019043, mean_action : 0.023184487713899995
+
+5/10, precision :  2%, total_reward:-19.0, q_loss : 0.3409408926963806, mean_action : 0.009496178910845806
+
+6/10, precision :  4%, total_reward:-11.0, q_loss : 0.3078077733516693, mean_action : -0.021424771356582648
+
+7/10, precision : 10%, total_reward:-55.0, q_loss : 0.266238272190094, mean_action : 0.00951893826087792
+
+8/10, precision :  7%, total_reward:-25.0, q_loss : 0.18558993935585022, mean_action : -0.03137706694858417
+
+9/10, precision :  0%, total_reward:-9.0, q_loss : 0.14721277356147766, mean_action : 0.02426449987623425
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-12.5, q_loss : 6.179455757141113, mean_action : 0.021795470523834234
+
+1/10, precision : 13%, total_reward:-21.5, q_loss : 0.043528035283088684, mean_action : -0.0080216433399025
+
+2/10, precision :  3%, total_reward:-12.0, q_loss : 0.017281608656048775, mean_action : -0.08173092024745764
+
+3/10, precision : 20%, total_reward:-34.5, q_loss : 0.0367748849093914, mean_action : -0.18236103259394532
+
+4/10, precision :  4%, total_reward:-38.0, q_loss : 0.02934783697128296, mean_action : 0.015266459507326944
+
+5/10, precision :  4%, total_reward:-9.5, q_loss : 0.026040785014629364, mean_action : 0.08118272196162829
+
+6/10, precision :  1%, total_reward:-25.5, q_loss : 0.08620046824216843, mean_action : 0.0009378883668354564
+
+7/10, precision :  8%, total_reward:-11.0, q_loss : 0.04886287823319435, mean_action : -0.04689444136619568
+
+8/10, precision :  0%, total_reward:-4.0, q_loss : 0.049318041652441025, mean_action : -0.049198336601257324
+
+9/10, precision :  8%, total_reward:-8.0, q_loss : 0.03940752148628235, mean_action : -0.0008940921723842622
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  9%, total_reward:-46.5, q_loss : 0.06280220299959183, mean_action : -0.03922284854685559
+
+1/10, precision :  0%, total_reward:-5.5, q_loss : 0.01625886932015419, mean_action : -0.04051394809376109
+
+2/10, precision : 14%, total_reward:-32.5, q_loss : 0.018285630270838737, mean_action : 0.008331085739713718
+
+3/10, precision : 22%, total_reward:-8.5, q_loss : 0.020483726635575294, mean_action : -0.06332017296082096
+
+4/10, precision : 22%, total_reward:1.5, q_loss : 0.016573123633861542, mean_action : -0.07480418194790144
+
+5/10, precision :  5%, total_reward:-6.5, q_loss : 0.014692079275846481, mean_action : -0.02214458293384976
+
+6/10, precision : 35%, total_reward:37.0, q_loss : 0.01749621145427227, mean_action : -0.05505480086159064
+
+7/10, precision :  6%, total_reward:-15.5, q_loss : 0.0038555075880140066, mean_action : -0.09196369906718081
+
+8/10, precision : 11%, total_reward:-10.5, q_loss : 0.0023310172837227583, mean_action : -0.05478901104493575
+
+9/10, precision : 12%, total_reward:-11.5, q_loss : 0.003204929642379284, mean_action : -0.04311790789876665
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-5.0, q_loss : 0.10753506422042847, mean_action : 0.11724367758631707
+
+1/10, precision :  6%, total_reward:-36.5, q_loss : 0.12349016964435577, mean_action : -0.10589333026420954
+
+2/10, precision : 10%, total_reward:-6.0, q_loss : 0.043020542711019516, mean_action : -0.049286144614219665
+
+3/10, precision : 13%, total_reward:-9.5, q_loss : 0.06625430285930634, mean_action : -0.13816884085536005
+
+4/10, precision :  5%, total_reward:-39.0, q_loss : 0.05510386824607849, mean_action : -0.15513474652060757
+
+5/10, precision : 27%, total_reward:16.0, q_loss : 0.050413232296705246, mean_action : -0.35226773860797395
+
+6/10, precision :  0%, total_reward:-9.0, q_loss : 0.03946469724178314, mean_action : -0.39891210211647876
+
+7/10, precision : 15%, total_reward:-20.0, q_loss : 0.04589047282934189, mean_action : -0.2642002600920005
+
+8/10, precision :  0%, total_reward:-1.0, q_loss : 0.031298376619815826, mean_action : -0.20444069743156434
+
+9/10, precision :  0%, total_reward:-5.5, q_loss : 0.034383371472358704, mean_action : -0.16749405694007874
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 32, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  5%, total_reward:-15.0, q_loss : 1233.490234375, mean_action : -0.021271957867854366
+
+1/10, precision :  5%, total_reward:-49.5, q_loss : 3.250455379486084, mean_action : -0.029453402963177912
+
+2/10, precision : 43%, total_reward:265.0, q_loss : 12.403800010681152, mean_action : -0.07831517756330027
+
+3/10, precision :  2%, total_reward:-21.0, q_loss : 0.16419245302677155, mean_action : -0.055968021027585295
+
+4/10, precision : 18%, total_reward:-26.0, q_loss : 48.552406311035156, mean_action : -0.0713989209733927
+
+5/10, precision :  9%, total_reward:-30.5, q_loss : 0.11987543106079102, mean_action : -0.033205751543459686
+
+6/10, precision :  4%, total_reward:-9.0, q_loss : 0.42628341913223267, mean_action : -0.0332699381737482
+
+7/10, precision :  9%, total_reward:-36.5, q_loss : 0.09905049949884415, mean_action : -0.06572568072158781
+
+8/10, precision :  3%, total_reward:-15.0, q_loss : 5.44406795501709, mean_action : 0.0019429190231092031
+
+9/10, precision :  8%, total_reward:-28.0, q_loss : 4.958504676818848, mean_action : -0.03778707363870408
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-6.0, q_loss : 1.732488989830017, mean_action : 0.08350910882155099
+
+1/10, precision :  4%, total_reward:-10.0, q_loss : 0.051946576684713364, mean_action : 0.055174756169319154
+
+2/10, precision :  6%, total_reward:-32.0, q_loss : 0.026379911229014397, mean_action : 0.02370518787573742
+
+3/10, precision :  3%, total_reward:-24.5, q_loss : 0.02231493778526783, mean_action : 0.06696094975136872
+
+4/10, precision :  8%, total_reward:-30.0, q_loss : 0.028525790199637413, mean_action : -0.004938506099912856
+
+5/10, precision :  3%, total_reward:-10.5, q_loss : 0.02108902856707573, mean_action : 0.027173206668633678
+
+6/10, precision :  5%, total_reward:-15.0, q_loss : 0.040049467235803604, mean_action : 0.006554353303379488
+
+7/10, precision : 10%, total_reward:-42.5, q_loss : 0.02688358910381794, mean_action : 0.016611383955364357
+
+8/10, precision :  6%, total_reward:-27.0, q_loss : 0.03167177364230156, mean_action : 0.04397104962513998
+
+9/10, precision : 11%, total_reward:-26.5, q_loss : 0.025061119347810745, mean_action : 0.08122010085689885
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-11.5, q_loss : 0.12190864235162735, mean_action : -0.032831956718278967
+
+1/10, precision :  5%, total_reward:-24.5, q_loss : 0.06444170325994492, mean_action : 0.04086002039558746
+
+2/10, precision :  0%, total_reward:-4.5, q_loss : 0.012992920354008675, mean_action : 0.043513511419296276
+
+3/10, precision : 18%, total_reward:-15.0, q_loss : 0.026815172284841537, mean_action : 0.007642158517023414
+
+4/10, precision : 24%, total_reward:0.0, q_loss : 0.018632622435688972, mean_action : -0.04336700653576332
+
+5/10, precision : 39%, total_reward:97.0, q_loss : 0.016123894602060318, mean_action : 0.02729838763500427
+
+6/10, precision :  7%, total_reward:-14.5, q_loss : 0.009527144022285938, mean_action : 0.01785416816410265
+
+7/10, precision : 16%, total_reward:-2.0, q_loss : 0.010120620019733906, mean_action : 0.06804385870695114
+
+8/10, precision : 30%, total_reward:8.5, q_loss : 0.01128026656806469, mean_action : 0.06426008083382431
+
+9/10, precision :  0%, total_reward:-4.5, q_loss : 0.012801263481378555, mean_action : 0.08933318667941623
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  3%, total_reward:-34.5, q_loss : 0.08265890181064606, mean_action : 0.0054405178930610355
+
+1/10, precision :  8%, total_reward:-24.5, q_loss : 0.08063099533319473, mean_action : 0.005632427930831908
+
+2/10, precision :  0%, total_reward:-7.0, q_loss : 0.0687635987997055, mean_action : 0.06678875310080391
+
+3/10, precision : 36%, total_reward:66.5, q_loss : 0.10928931087255478, mean_action : -0.05184419732026649
+
+4/10, precision :  7%, total_reward:-5.5, q_loss : 0.057042066007852554, mean_action : -0.06651463908808572
+
+5/10, precision :  0%, total_reward:-3.5, q_loss : 0.008066920563578606, mean_action : 0.013982942774891857
+
+6/10, precision : 37%, total_reward:66.5, q_loss : 0.014464798383414745, mean_action : -0.0920644155605273
+
+7/10, precision : 11%, total_reward:-8.5, q_loss : 0.018918544054031372, mean_action : -0.08352881971427371
+
+8/10, precision : 34%, total_reward:15.5, q_loss : 0.02055983804166317, mean_action : -0.0579917791211013
+
+9/10, precision : 10%, total_reward:-2.5, q_loss : 0.022818295285105705, mean_action : -0.12308486431837082
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  6%, total_reward:-25.5, q_loss : 6956.1259765625, mean_action : -0.005789226804460796
+
+1/10, precision :  4%, total_reward:-11.0, q_loss : 23.92599868774414, mean_action : -0.04605071554183961
+
+2/10, precision : 12%, total_reward:-7.5, q_loss : 6.997107982635498, mean_action : 0.03703832641243935
+
+3/10, precision : 13%, total_reward:-37.0, q_loss : 0.0892447754740715, mean_action : -0.003253519065188663
+
+4/10, precision :  0%, total_reward:-14.5, q_loss : 0.1632508635520935, mean_action : 0.012596389199125358
+
+5/10, precision : 10%, total_reward:-6.5, q_loss : 19786.6875, mean_action : -0.03818040769351157
+
+6/10, precision :  8%, total_reward:-36.0, q_loss : 2072.69287109375, mean_action : -0.018617292896645963
+
+7/10, precision :  1%, total_reward:-23.0, q_loss : 0.2612345218658447, mean_action : -0.015628752731809425
+
+8/10, precision :  2%, total_reward:-18.5, q_loss : 0.2540961802005768, mean_action : -0.041695839631848225
+
+9/10, precision :  1%, total_reward:-27.0, q_loss : 0.2659478783607483, mean_action : -0.06388517641184625
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  5%, total_reward:-6.0, q_loss : 6.609144687652588, mean_action : -0.009908046582165885
+
+1/10, precision :  0%, total_reward:-13.5, q_loss : 0.052919238805770874, mean_action : -0.0010030425036395044
+
+2/10, precision :  0%, total_reward:-5.0, q_loss : 0.01208475511521101, mean_action : 0.027703585386276243
+
+3/10, precision : 21%, total_reward:-22.0, q_loss : 0.03813900798559189, mean_action : -0.029992159491873036
+
+4/10, precision : 44%, total_reward:166.5, q_loss : 0.016454245895147324, mean_action : -0.0797571626258023
+
+5/10, precision : 13%, total_reward:-11.5, q_loss : 0.0030976939015090466, mean_action : -0.050224414547284456
+
+6/10, precision :  0%, total_reward:-8.0, q_loss : 0.002394793787971139, mean_action : -0.08430663555860521
+
+7/10, precision : 29%, total_reward:15.5, q_loss : 0.008161189034581184, mean_action : -0.04899352695921373
+
+8/10, precision :  6%, total_reward:-19.5, q_loss : 0.009612743742763996, mean_action : -0.03673435559078138
+
+9/10, precision : 20%, total_reward:-2.5, q_loss : 0.011713463813066483, mean_action : 0.007507768704973412
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-13.0, q_loss : 0.3560868799686432, mean_action : -0.012735682084010201
+
+1/10, precision : 11%, total_reward:-38.5, q_loss : 0.038347337394952774, mean_action : 0.06665273893886889
+
+2/10, precision :  0%, total_reward:-15.0, q_loss : 0.0066048032604157925, mean_action : 0.12792695183907785
+
+3/10, precision :  8%, total_reward:-42.0, q_loss : 0.010322623886168003, mean_action : -0.0028976534248337
+
+4/10, precision :  0%, total_reward:-1.5, q_loss : 0.005452820565551519, mean_action : 0.10378459294637045
+
+5/10, precision : 20%, total_reward:-23.5, q_loss : 0.011974337510764599, mean_action : -0.019835517802819388
+
+6/10, precision :  0%, total_reward:-7.0, q_loss : 0.014430157840251923, mean_action : 0.020625018392290383
+
+7/10, precision : 16%, total_reward:-23.0, q_loss : 0.009895140305161476, mean_action : -0.0014238548345931
+
+8/10, precision :  5%, total_reward:-7.5, q_loss : 0.012784232385456562, mean_action : -0.016605106830596926
+
+9/10, precision : 25%, total_reward:-8.5, q_loss : 0.00932108610868454, mean_action : -0.08361540058657932
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  3%, total_reward:-14.5, q_loss : 0.21030886471271515, mean_action : -0.014992887147011295
+
+1/10, precision : 46%, total_reward:390.5, q_loss : 0.06607558578252792, mean_action : -0.05003820969604594
+
+2/10, precision : 22%, total_reward:-13.0, q_loss : 0.033877525478601456, mean_action : -0.04417180195221534
+
+3/10, precision :  9%, total_reward:-25.0, q_loss : 0.02473638951778412, mean_action : -0.04443135654672663
+
+4/10, precision :  0%, total_reward:-3.0, q_loss : 0.020469946786761284, mean_action : -0.05792174855868021
+
+5/10, precision : 18%, total_reward:-14.0, q_loss : 0.019715867936611176, mean_action : -0.16366811711537207
+
+6/10, precision :  0%, total_reward:-1.0, q_loss : 0.019009532406926155, mean_action : -0.2043369150161743
+
+7/10, precision :  5%, total_reward:-15.0, q_loss : 0.019218580797314644, mean_action : -0.19266676893359738
+
+8/10, precision :  0%, total_reward:-3.0, q_loss : 0.020093204453587532, mean_action : -0.18617712815602624
+
+9/10, precision :  0%, total_reward:-0.5, q_loss : 0.016415178775787354, mean_action : -0.09852272033691406
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 64, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  2%, total_reward:-19.0, q_loss : 1724.9710693359375, mean_action : -0.012921235941350463
+
+1/10, precision :  3%, total_reward:-58.5, q_loss : 62.837257385253906, mean_action : 0.023560788994576764
+
+2/10, precision : 10%, total_reward:-41.0, q_loss : 0.27617347240448, mean_action : 0.0131571280573671
+
+3/10, precision :  0%, total_reward:-5.5, q_loss : 0.42590853571891785, mean_action : 0.0066746959586938244
+
+4/10, precision :  0%, total_reward:-5.0, q_loss : 0.11853078752756119, mean_action : -0.0894921631515026
+
+5/10, precision : 11%, total_reward:-59.0, q_loss : 0.14591413736343384, mean_action : -0.07464887076241965
+
+6/10, precision :  0%, total_reward:-8.0, q_loss : 0.1590760350227356, mean_action : -0.0860563264042139
+
+7/10, precision :  0%, total_reward:-12.0, q_loss : 0.16685493290424347, mean_action : -0.0699674073855082
+
+8/10, precision :  7%, total_reward:-91.0, q_loss : 0.12188627570867538, mean_action : -0.06706293415839146
+
+9/10, precision :  0%, total_reward:-1.5, q_loss : 0.06823553889989853, mean_action : 0.013232557773590087
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  2%, total_reward:-19.5, q_loss : 0.7063236832618713, mean_action : 0.0064300382814624045
+
+1/10, precision :  0%, total_reward:-4.0, q_loss : 0.01383061334490776, mean_action : -0.03382618695497513
+
+2/10, precision :  6%, total_reward:-15.0, q_loss : 0.023882322013378143, mean_action : -0.05303335363088652
+
+3/10, precision :  5%, total_reward:-21.0, q_loss : 0.01777147687971592, mean_action : -0.05753755528552858
+
+4/10, precision :  5%, total_reward:-23.0, q_loss : 0.024438325315713882, mean_action : -0.16175783081301331
+
+5/10, precision : 10%, total_reward:-21.5, q_loss : 0.002467640908434987, mean_action : -0.11611446260081403
+
+6/10, precision :  6%, total_reward:-5.0, q_loss : 0.006664542481303215, mean_action : -0.09151020272572837
+
+7/10, precision : 30%, total_reward:32.5, q_loss : 0.004207152407616377, mean_action : -0.05123210841262276
+
+8/10, precision : 12%, total_reward:-22.5, q_loss : 0.004923123400658369, mean_action : -0.07285619281935238
+
+9/10, precision :  4%, total_reward:-10.0, q_loss : 0.0044214678928256035, mean_action : -0.010285339355468753
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-0.5, q_loss : 0.0, mean_action : 0.2177394676208496
+
+1/10, precision : 27%, total_reward:12.5, q_loss : 0.06577227264642715, mean_action : -0.10889153318117128
+
+2/10, precision : 12%, total_reward:-16.5, q_loss : 0.003853308269754052, mean_action : -0.0948950735727946
+
+3/10, precision : 21%, total_reward:-11.5, q_loss : 0.004432026296854019, mean_action : -0.10103466658899098
+
+4/10, precision : 19%, total_reward:-11.0, q_loss : 0.006296033505350351, mean_action : -0.02912620147833457
+
+5/10, precision : 16%, total_reward:-21.0, q_loss : 0.007028270047158003, mean_action : -0.025480216389182204
+
+6/10, precision :  0%, total_reward:-5.5, q_loss : 0.006759390234947205, mean_action : 0.051877678090875796
+
+7/10, precision :  3%, total_reward:-26.5, q_loss : 0.008514800108969212, mean_action : 0.03714349173940717
+
+8/10, precision :  5%, total_reward:-13.0, q_loss : 0.0034368557389825583, mean_action : -0.011042236440321977
+
+9/10, precision : 10%, total_reward:-52.0, q_loss : 0.006325728725641966, mean_action : 0.02499307818441507
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  6%, total_reward:-28.0, q_loss : 0.5528974533081055, mean_action : -0.010127254543882427
+
+1/10, precision :  0%, total_reward:-10.0, q_loss : 0.15937009453773499, mean_action : 0.03923711329698563
+
+2/10, precision :  4%, total_reward:-9.5, q_loss : 0.11838798969984055, mean_action : 0.03289861520582979
+
+3/10, precision :  0%, total_reward:-21.0, q_loss : 0.14408741891384125, mean_action : 0.011767689103171941
+
+4/10, precision :  3%, total_reward:-32.0, q_loss : 0.1006942167878151, mean_action : 0.01049975516298149
+
+5/10, precision :  9%, total_reward:-52.0, q_loss : 0.06481365114450455, mean_action : -0.10630699215513283
+
+6/10, precision :  0%, total_reward:-18.0, q_loss : 0.005168979987502098, mean_action : -0.11095348571737611
+
+7/10, precision :  5%, total_reward:-41.0, q_loss : 0.006097136996686459, mean_action : -0.14376062558507016
+
+8/10, precision :  6%, total_reward:-35.0, q_loss : 0.006589950993657112, mean_action : -0.16995649258507062
+
+9/10, precision :  7%, total_reward:-34.0, q_loss : 0.007490658201277256, mean_action : -0.15577111440676225
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  6%, total_reward:-5.0, q_loss : 28442.576171875, mean_action : 0.021770771344502768
+
+1/10, precision :  0%, total_reward:-6.0, q_loss : 5606.97021484375, mean_action : 0.0044333980480829914
+
+2/10, precision : 11%, total_reward:-60.5, q_loss : 1888.6785888671875, mean_action : -0.0047797067064634545
+
+3/10, precision :  7%, total_reward:-40.0, q_loss : 0.39805924892425537, mean_action : -0.01883547980534402
+
+4/10, precision :  0%, total_reward:-3.5, q_loss : 10.7181396484375, mean_action : -0.030280912773949755
+
+5/10, precision :  0%, total_reward:-3.0, q_loss : 0.1283503919839859, mean_action : -0.13287098169326783
+
+6/10, precision :  2%, total_reward:-14.5, q_loss : 0.13613376021385193, mean_action : 0.01933776902801851
+
+7/10, precision :  6%, total_reward:-51.0, q_loss : 0.21078091859817505, mean_action : -0.005006814781522412
+
+8/10, precision :  0%, total_reward:-1.5, q_loss : 2263.597900390625, mean_action : 0.12533240079879762
+
+9/10, precision :  4%, total_reward:-17.0, q_loss : 14.909131050109863, mean_action : -0.02165161816233939
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-4.0, q_loss : 10.484349250793457, mean_action : -0.039115077108144755
+
+1/10, precision : 34%, total_reward:59.5, q_loss : 0.042760759592056274, mean_action : -0.03736987632995395
+
+2/10, precision : 12%, total_reward:-1.0, q_loss : 0.016997944563627243, mean_action : -0.030547132194042207
+
+3/10, precision :  8%, total_reward:-11.5, q_loss : 0.010039308108389378, mean_action : -0.11618439400897303
+
+4/10, precision :  3%, total_reward:-14.5, q_loss : 0.02384268119931221, mean_action : -0.06142896573990581
+
+5/10, precision :  9%, total_reward:-4.0, q_loss : 0.01571499928832054, mean_action : -0.02961112683469599
+
+6/10, precision : 14%, total_reward:-24.5, q_loss : 0.004100960213690996, mean_action : -0.0703328165533097
+
+7/10, precision : 11%, total_reward:-16.5, q_loss : 0.003992439713329077, mean_action : -0.07670354535502767
+
+8/10, precision : 18%, total_reward:-13.5, q_loss : 0.007512127049267292, mean_action : -0.033178820420761354
+
+9/10, precision : 10%, total_reward:-18.5, q_loss : 0.005570777226239443, mean_action : 0.006738795670596034
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  4%, total_reward:-16.5, q_loss : 0.26149633526802063, mean_action : -0.0016439101641828344
+
+1/10, precision :  3%, total_reward:-12.5, q_loss : 0.026462385430932045, mean_action : 0.028057027970041552
+
+2/10, precision :  5%, total_reward:-37.0, q_loss : 0.030601324513554573, mean_action : -0.016896370137349157
+
+3/10, precision : 31%, total_reward:43.0, q_loss : 0.02171531692147255, mean_action : -0.02693470237794373
+
+4/10, precision : 21%, total_reward:-12.5, q_loss : 0.012994705699384212, mean_action : -0.06926117856791068
+
+5/10, precision : 46%, total_reward:174.0, q_loss : 0.010374773293733597, mean_action : -0.16204409811805318
+
+6/10, precision : 10%, total_reward:-27.5, q_loss : 0.003464936511591077, mean_action : -0.08387052430604636
+
+7/10, precision : 24%, total_reward:8.5, q_loss : 0.005466869566589594, mean_action : -0.017619315251060138
+
+8/10, precision :  6%, total_reward:-15.5, q_loss : 0.006037028040736914, mean_action : -0.013010104479997052
+
+9/10, precision :  8%, total_reward:-11.0, q_loss : 0.005314705893397331, mean_action : -0.0015057626015999737
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision : 31%, total_reward:75.5, q_loss : 0.06569524109363556, mean_action : -0.10082238465977393
+
+1/10, precision : 10%, total_reward:-44.0, q_loss : 0.010001100599765778, mean_action : -0.09282612338662148
+
+2/10, precision :  7%, total_reward:-29.0, q_loss : 0.007667906582355499, mean_action : -0.09757161907207822
+
+3/10, precision :  0%, total_reward:-7.5, q_loss : 0.007188915275037289, mean_action : -0.10417615389823913
+
+4/10, precision :  7%, total_reward:-11.0, q_loss : 0.008334492333233356, mean_action : -0.1284288659615395
+
+5/10, precision :  9%, total_reward:-17.5, q_loss : 0.009067713283002377, mean_action : -0.10691475510597226
+
+6/10, precision :  7%, total_reward:-15.0, q_loss : 0.010020051151514053, mean_action : -0.0635566151425952
+
+7/10, precision : 10%, total_reward:-6.5, q_loss : 0.009845837950706482, mean_action : -0.10508591369578714
+
+8/10, precision : 14%, total_reward:-15.0, q_loss : 0.009586050175130367, mean_action : -0.12534050797161303
+
+9/10, precision :  9%, total_reward:-32.0, q_loss : 0.008707471191883087, mean_action : -0.17566292064840147
+Configuration {'actor_hidden_dim': 256, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True} achieved average precision: 0
+Best configuration: {'actor_hidden_dim': 128, 'actor_learning_rate': 0.1, 'batch_size': 16, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.1, 'embedding_dim': 100, 'load_weights': True} with precision: 0        
+PS C:\Users\vince\OneDrive\Desktop\Movie-Recommendation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

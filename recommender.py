@@ -214,7 +214,7 @@ class DRRAgent:
                 if reward > 0:
                     correct_count += 1
                 
-                print(f'recommended items : {len(self.env.recommended_items)},  epsilon : {self.epsilon:0.3f}, reward : {reward:+}', end='\r')
+                # print(f'recommended items : {len(self.env.recommended_items)},  epsilon : {self.epsilon:0.3f}, reward : {reward:+}', end='\r')
 
                 if done:
                     print()
