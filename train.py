@@ -91,10 +91,10 @@ if __name__ == "__main__":
     time.sleep(2)
 
     env = OfflineEnv(train_users_dict, train_users_history_lens, movies_id_to_movies, STATE_SIZE)
-    # recommender = DRRAgent(env, users_num, items_num, STATE_SIZE, use_wandb=False)
-    # recommender.actor.build_networks()
-    # recommender.critic.build_networks()
-    # recommender.train(MAX_EPISODE_NUM, load_model=False)
+    recommender = DRRAgent(env, users_num, items_num, STATE_SIZE, use_wandb=False)
+    recommender.actor.build_networks()
+    recommender.critic.build_networks()
+    recommender.train(MAX_EPISODE_NUM, load_model=False)
     
     # Define hyperparam
     param_grid = {
@@ -108,4 +108,4 @@ if __name__ == "__main__":
         'load_weights': [True],
     }
 
-    best_config, results = grid_search(env, users_num, items_num, param_grid)
+    # best_config, results = grid_search(env, users_num, items_num, param_grid)
