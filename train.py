@@ -9,7 +9,7 @@ from sklearn.model_selection import ParameterGrid
 
 from envs import OfflineEnv
 from recommender import DRRAgent
-
+import csv
 import os
 ROOT_DIR = os.getcwd()
 DATA_DIR = os.path.join(ROOT_DIR, 'ml-1m/ml-1m')
@@ -17,6 +17,25 @@ DATA_DIR = os.path.join(ROOT_DIR, 'ml-1m/ml-1m')
 # DATA_DIR = os.path.join(ROOT_DIR, 'ml-latest-small/ml-latest-small')
 STATE_SIZE = 10
 MAX_EPISODE_NUM = 10
+
+def custom_read_data(file_path):
+    with open(file_path, 'r', encoding='latin-1') as file:
+        # Skip the header or manage accordingly if there's no header
+        next(file)  # Uncomment this line if there's a header
+        data = []
+        for line in file:
+            parts = line.strip().split(':')
+            if len(parts) > 5:
+                # Rejoin incorrectly split parts for Title or AggregatedTags
+                movie_id = parts[0]
+                title = ':'.join(parts[1:-3])  # Assumes title is the field being split incorrectly
+                genres = parts[-3]
+                year = parts[-2]
+                aggregated_tags = parts[-1]
+                data.append([movie_id, title, genres, year, aggregated_tags])
+            else:
+                data.append(parts)
+    return data
 
 # os.environ["CUDA_VISIBLE_DEVICES"]="1"
 
@@ -53,18 +72,18 @@ if __name__ == "__main__":
     # Ensure all elements can be converted to integers
     ratings_list = [[int(x) if x.isdigit() else 0 for x in i.strip().split("::")] for i in open(os.path.join(DATA_DIR, 'ratings.dat'), 'r').readlines()]
     users_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'users.dat'), 'r').readlines()]
-    movies_list = [i.strip().split("::") for i in open(os.path.join(DATA_DIR,'movies.dat'),encoding='latin-1').readlines()]
     # ratings_df = pd.DataFrame(ratings_list, columns = ['UserID', 'MovieID', 'Rating', 'Timestamp'], dtype = np.uint32)
     ratings_df = pd.DataFrame(ratings_list, columns=['UserID', 'MovieID', 'Rating', 'Timestamp'])
     ratings_df['UserID'] = ratings_df['UserID'].astype(np.uint32)
     ratings_df['MovieID'] = ratings_df['MovieID'].astype(np.uint32)
     ratings_df['Rating'] = ratings_df['Rating'].astype(np.uint32)
     ratings_df['Timestamp'] = ratings_df['Timestamp'].astype(np.uint32)
-    movies_df = pd.DataFrame(movies_list, columns = ['MovieID', 'Title', 'Genres'])
-    movies_df['MovieID'] = movies_df['MovieID'].apply(pd.to_numeric)
+    movies_data = custom_read_data(os.path.join(DATA_DIR, 'merged_movies.dat'))
+    movies_df = pd.DataFrame(movies_data, columns=['MovieID', 'Title', 'Genres', 'Year', 'AggregatedTags'])
 
     print("Data loading complete!")
     print("Data preprocessing...")
+    print(movies_df.head())
 
     # 영화 id를 영화 제목으로
     movies_id_to_movies = {movie[0]: movie[1:] for movie in movies_list}

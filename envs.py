@@ -74,7 +74,7 @@ class OfflineEnv(object):
 
         else:
             if action in self.user_items.keys() and action not in self.recommended_items:
-                reward = self.user_items[action] -3  # reward
+                reward = self.user_items[action] -3  # 
             if reward > 0:
                 self.items = self.items[1:] + [action]
             self.recommended_items.add(action)
