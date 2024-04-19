@@ -13,42 +13,90 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import os
 import wandb
+import h5py
 
 class DRRAgent:
     
-    def __init__(self, env, users_num, items_num, state_size, is_test=False, use_wandb=False):
+    def __init__(self, env, users_num, items_num, state_size, is_test=False, use_wandb=False, 
+                 embedding_dim=100, actor_hidden_dim=128, actor_learning_rate=0.001, 
+                 critic_hidden_dim=128, critic_learning_rate=0.001, discount_factor=0.9, tau=0.001,
+                 replay_memory_size=1000000, batch_size=32, load_weights=True, 
+                 weights_path='./save_weights/user_movie_embedding_case4.h5'):
+        
+        # self.env = env
+
+        # self.users_num = users_num
+        # self.items_num = items_num
+        
+        # self.embedding_dim = 100
+        # self.actor_hidden_dim = 128
+        # self.actor_learning_rate = 0.001
+        # self.critic_hidden_dim = 128
+        # self.critic_learning_rate = 0.001
+        # self.discount_factor = 0.9
+        # self.tau = 0.001
+
+        # self.replay_memory_size = 1000000
+        # self.batch_size = 32
         
         self.env = env
-
         self.users_num = users_num
         self.items_num = items_num
-        
-        self.embedding_dim = 100
-        self.actor_hidden_dim = 128
-        self.actor_learning_rate = 0.001
-        self.critic_hidden_dim = 128
-        self.critic_learning_rate = 0.001
-        self.discount_factor = 0.9
-        self.tau = 0.001
-
-        self.replay_memory_size = 1000000
-        self.batch_size = 32
+        self.embedding_dim = embedding_dim
+        self.actor_hidden_dim = actor_hidden_dim
+        self.actor_learning_rate = actor_learning_rate
+        self.critic_hidden_dim = critic_hidden_dim
+        self.critic_learning_rate = critic_learning_rate
+        self.discount_factor = discount_factor
+        self.tau = tau
+        self.replay_memory_size = replay_memory_size
+        self.batch_size = batch_size
         
         self.actor = Actor(self.embedding_dim, self.actor_hidden_dim, self.actor_learning_rate, state_size, self.tau)
         self.critic = Critic(self.critic_hidden_dim, self.critic_learning_rate, self.embedding_dim, self.tau)
+        
+        # Adjust user & item dimensions based on the weights
+        if os.path.exists(weights_path) and load_weights:
+            with h5py.File(weights_path, 'r') as f:
+                # Get dimension
+                user_weights_shape = f['user_embedding/embeddings'].shape[0]
+                item_weights_shape = f['movie_embedding/embeddings'].shape[0]
+                users_num = user_weights_shape
+                items_num = item_weights_shape
+
+        self.users_num = users_num
+        self.items_num = items_num
         
         # self.m_embedding_network = MovieGenreEmbedding(items_num, 19, self.embedding_dim)
         # self.m_embedding_network([np.zeros((1,)),np.zeros((1,))])
         # self.m_embedding_network.load_weights('/home/diominor/Workspace/DRR/save_weights/m_g_model_weights.h5')
 
-        self.embedding_network = UserMovieEmbedding(users_num, items_num, self.embedding_dim)
-        self.embedding_network([np.zeros((1,)),np.zeros((1,))])
+        # Original without weights
+        # self.embedding_network = UserMovieEmbedding(users_num, items_num, self.embedding_dim)
+        # self.embedding_network([np.zeros((1,)),np.zeros((1,))])
+        
+        # New: Initialize with adjusted dimension
+        self.embedding_network = UserMovieEmbedding(self.users_num, self.items_num, self.embedding_dim)
+        self.embedding_network.build(input_shape=[(None, 1), (None, 1)])
         # self.embedding_network = UserMovieEmbedding(users_num, self.embedding_dim)
         # self.embedding_network([np.zeros((1)),np.zeros((1,100))])
+        
+        if os.path.exists(weights_path):
+            loaded_shapes = np.load(weights_path, allow_pickle=True).item().keys()
+            model_shapes = {w.name: w.shape for w in self.embedding_network.trainable_weights}
+            shape_mismatch = any(model_shapes[w_name] != w_shape for w_name, w_shape in loaded_shapes)
+            if shape_mismatch:
+                print("Dimension/Shape mismacth")
+            else:
+                self.embedding_network.load_weights(weights_path)
+                print("Weights load success")
+        else:
+            print(f"No weight path {weights_path} found")
+        
         self.save_model_weight_dir = f"./save_model/trail-{datetime.now().strftime('%Y-%m-%d-%H')}"
-        if not os.path.exists(self.save_model_weight_dir):
-            os.makedirs(os.path.join(self.save_model_weight_dir, 'imagess'))
-        embedding_save_file_dir = './save_weights/user_movie_embedding_case4.h5'
+        if not os.path.exists(self.save_model_weight_dir) or not load_weights:
+            os.makedirs(os.path.join(self.save_model_weight_dir, 'images'))
+        embedding_save_file_dir = weights_path
         assert os.path.exists(embedding_save_file_dir), f"embedding save file directory: '{embedding_save_file_dir}' is wrong."
         self.embedding_network.load_weights(embedding_save_file_dir)
 
@@ -197,7 +245,7 @@ class DRRAgent:
                 if reward > 0:
                     correct_count += 1
                 
-                print(f'recommended items : {len(self.env.recommended_items)},  epsilon : {self.epsilon:0.3f}, reward : {reward:+}', end='\r')
+                # print(f'recommended items : {len(self.env.recommended_items)},  epsilon : {self.epsilon:0.3f}, reward : {reward:+}', end='\r')
 
                 if done:
                     print()

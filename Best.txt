@@ -1,0 +1,43 @@
+Testing configuration: {'actor_hidden_dim': 256, 'actor_learning_rate': 0.001, 'batch_size': 64, 'critic_hidden_dim': 128, 'critic_learning_rate': 0.01, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  5%, total_reward:-12.5, q_loss : 0.5857308506965637, mean_action : -0.01075001033714839
+
+1/10, precision : 21%, total_reward:-7.5, q_loss : 0.03374101594090462, mean_action : -0.03825315299820392
+
+2/10, precision : 26%, total_reward:5.0, q_loss : 0.016428494825959206, mean_action : -0.0702240668400702
+
+3/10, precision : 29%, total_reward:39.0, q_loss : 0.019192524254322052, mean_action : -0.17745211832369545
+
+4/10, precision :  7%, total_reward:-8.0, q_loss : 0.012553516775369644, mean_action : -0.20527785539627075
+
+5/10, precision : 59%, total_reward:598.0, q_loss : 0.011320150457322598, mean_action : -0.09656196457751179
+
+6/10, precision : 16%, total_reward:-24.0, q_loss : 0.005728187505155802, mean_action : -0.18817333958586865
+
+7/10, precision :  6%, total_reward:-6.5, q_loss : 0.0063738091848790646, mean_action : -0.03636887304484844
+
+8/10, precision : 13%, total_reward:-13.5, q_loss : 0.00679198931902647, mean_action : -0.032808466355005915
+
+9/10, precision : 26%, total_reward:12.5, q_loss : 0.00921111274510622, mean_action : -0.003657706090790067
+
+Testing configuration: {'actor_hidden_dim': 128, 'actor_learning_rate': 0.0001, 'batch_size': 128, 'critic_hidden_dim': 256, 'critic_learning_rate': 0.0001, 'embedding_dim': 100, 'load_weights': True}
+
+0/10, precision :  0%, total_reward:-2.5, q_loss : 0.24196724593639374, mean_action : -0.020209360917409255
+
+1/10, precision : 44%, total_reward:252.5, q_loss : 0.07806310802698135, mean_action : -0.03620082234750028
+
+2/10, precision : 12%, total_reward:-17.0, q_loss : 0.031843166798353195, mean_action : -0.012408876810755053
+
+3/10, precision : 46%, total_reward:206.5, q_loss : 0.024369819089770317, mean_action : -0.04087530523590959
+
+4/10, precision : 50%, total_reward:204.5, q_loss : 0.020255325362086296, mean_action : -0.10614514440016258
+
+5/10, precision : 20%, total_reward:-6.0, q_loss : 0.018240654841065407, mean_action : -0.1441376180423272
+
+6/10, precision : 11%, total_reward:-14.5, q_loss : 0.017138274386525154, mean_action : -0.12272006207042269
+
+7/10, precision :  9%, total_reward:-30.5, q_loss : 0.01586853340268135, mean_action : -0.08969253731162652
+
+8/10, precision :  0%, total_reward:-7.0, q_loss : 0.016385138034820557, mean_action : -0.11431987864630562
+
+9/10, precision : 31%, total_reward:10.5, q_loss : 0.014829804189503193, mean_action : -0.16275234261977256
